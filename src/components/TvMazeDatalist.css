@@ -1,0 +1,72 @@
+body {
+  width: 100vh;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.tvMazeDataList {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+  justify-content: center;
+}
+@media (max-width: 700px) {
+  .tvMazeDataList {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 500px) {
+  .tvMazeDataList {
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+    justify-content: center;
+    padding-left: 30px;
+  }
+  .card {
+    padding-left: 30px;
+  }
+}
+h2 {
+  padding-top: 10px;
+  font-size: 25px;
+}
+.card {
+  display: grid;
+  grid-template-columns: 250px;
+  grid-template-rows: 245px;
+  grid-template-areas: 'picture' 'text' 'info';
+  border-radius: 18px;
+  background: rgb(200, 211, 196);
+  box-shadow: 5px 5px 15px rgb(0, 0, 0, 0.9);
+  font-family: roboto;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.5 ease;
+  margin: 30px;
+}
+
+.picture {
+  grid-area: picture;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+}
+.text {
+  grid-area: text;
+}
+.info {
+  grid-area: info;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.value {
+  padding-bottom: 10px;
+}
+.card:hover {
+  box-shadow: 5px 5px 15px rgb(0, 0, 0, 0.6);
+}

@@ -1,0 +1,34 @@
+body {
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.App {
+  text-align: center;
+}
+.cast {
+  padding-top: 0px;
+}
+.btn {
+  border: 1px solid #810919;
+  color: white;
+  background: #1c61af;
+  padding: 10px 10px;
+  cursor: pointer;
+  margin: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.btn:hover {
+  border: 1px solid #1c61af;
+  background: #1caf1c;
+}
+
+.styleTop {
+  background: #ca1d5f;
+}
+.styleBottom {
+  background: #72af39;
+}
